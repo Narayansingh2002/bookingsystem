@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="nav">
+        <div class="logo">
+            <img class="icon" src="Images/iconlogo.png" alt="logo">
+            TechAthletics</div>
+            <a href="#" class="mobile-view">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span> 
+            </a>
+        <div class="navbar-links">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">About Us</a></li>
+                <div class="registration">
+                    <a href="login.php" class="btnRegistration btnLog-in">Log In</a>
+                    <a href="signup.php" class="btnRegistration btnSign-up">Sign Up</a>
+                </div>
+            </ul>
+        </div>
+    </nav>
+    <div id="account-message">
+    <h1>Your account has been created</h1>
+    <p>Please log in <a href="login.php">Here</a></p>
+</div>
+
+
+<script>
+    const mobileView = document.getElementsByClassName('mobile-view')[0]
+const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+
+mobileView.addEventListener('click', () => {
+navbarLinks.classList.toggle('active');
+})
+
+</script>
+    
+    </body>
+    </html>
